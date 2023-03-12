@@ -6,10 +6,10 @@ end
 mapper("n", "<Leader>gm", "<Plug>(git-messenger)<CR>")
 
 -- Para recargar un archivo de forma manual
-mapper("n", "<Leader>ss", ":so<CR>")
+mapper("n", "<Leader>s", ":so<CR>")
 
 -- Save and Close
-mapper("n", "<Leader>w", ":w!<CR> :so<CR>")
+mapper("n", "<Leader>w", ":w!<CR>")
 mapper("n", "<Leader>q", ":q<CR>")
 mapper("n", "mq", ":qa!<CR>")
 mapper("n", "qq", ":q!<CR>")
@@ -54,4 +54,7 @@ mapper("n", "<C-l>", "<C-w>l")
 --Agregar ventana
 mapper("n", "<Leader>va", ":split<CR>") -- ventana arriba
 mapper("n", "<Leader>vi", ":vsplit<CR>") -- ventana izquierda
+
+-- Cerrar una buffer
+mapper("n", "<C-w>", ":Bdelete<CR>")
 

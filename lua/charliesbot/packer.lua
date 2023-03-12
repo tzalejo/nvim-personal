@@ -87,4 +87,13 @@ return require('packer').startup(function(use)
     end
   }
 
+  -- Para menejo de tabs(buffer)
+  use {
+    'akinsho/bufferline.nvim',
+    tag = "v3.*",
+    requires = 'nvim-tree/nvim-web-devicons'
+  }
+  -- Permite eliminar búferes (cerrar archivos) sin cerrar sus ventanas o estropear su diseño.
+  use {'moll/vim-bbye'}
+
 end)
