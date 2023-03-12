@@ -3,7 +3,7 @@ local mapper = function(mode, key, result)
   vim.api.nvim_set_keymap(mode, key, result, {noremap = true, silent = true})
 end
 -- Git messenger
---mapper("n", "<Leader>gm", "<Plug>(git-messenger)<CR>")
+mapper("n", "<Leader>gm", "<Plug>(git-messenger)<CR>")
 
 -- Para recargar un archivo de forma manual
 mapper("n", "<Leader>ss", ":so<CR>")
@@ -13,9 +13,6 @@ mapper("n", "<Leader>w", ":w!<CR> :so<CR>")
 mapper("n", "<Leader>q", ":q<CR>")
 mapper("n", "mq", ":qa!<CR>")
 mapper("n", "qq", ":q!<CR>")
-
--- Abrir Terminal
---mapper("n", "<C-t>", ":split<CR>:ter<CR>:resize 15<CR>")
 
 -- Abre una ventana
 mapper("n", "<Leader>V", ":vsplit<CR>")
