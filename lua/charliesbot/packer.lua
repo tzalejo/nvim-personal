@@ -96,4 +96,7 @@ return require('packer').startup(function(use)
   -- Permite eliminar búferes (cerrar archivos) sin cerrar sus ventanas o estropear su diseño.
   use {'moll/vim-bbye'}
 
+  -- Es un complemento de neovim para revelar rapidamente el msg oculta de git debajo del cursor.
+  use {'rhysd/git-messenger.vim'}
+
 end)

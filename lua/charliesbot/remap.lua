@@ -2,6 +2,7 @@
 local mapper = function(mode, key, result)
   vim.api.nvim_set_keymap(mode, key, result, {noremap = true, silent = true})
 end
+
 -- Git messenger
 mapper("n", "<Leader>gm", "<Plug>(git-messenger)<CR>")
 
