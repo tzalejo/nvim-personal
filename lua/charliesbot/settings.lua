@@ -9,6 +9,14 @@ vim.opt.swapfile = false
 
 vim.opt.signcolumn = 'yes'
 
+-- Indentation & tabs
+vim.opt.expandtab = true
+vim.opt.tabstop = 2
+vim.opt.softtabstop = 2
+vim.opt.shiftwidth = 2
+vim.opt.smartindent = true
+vim.opt.wrap = false
+
 -- Syntax on!
 g.syntax_on = true
 o.synmaxcol = 1500
@@ -93,7 +101,10 @@ o.lazyredraw = true
 o.errorformat = o.errorformat .. ',%f'
 
 -- Share Clipboard between the system and nvim
-o.clipboard = 'unnamedplus'
+vim.opt.clipboard:append('unnamedplus')
+
+-- para indicar q el - es parte de una palabra
+vim.opt.iskeyword:append("-")
 
 -- Necesary
 -- cmd('filetype plugin indent on')
@@ -117,9 +128,6 @@ o.mouse = "a"
 
 -- Don't redraw while executing macros
 o.ttyfast = true
-
--- Set zsh as shell (which zsh)
-o.shell = "/usr/bin/zsh"
 
 -- Highlight the screen line of the cursor with CursorLine
 wo.cursorline = false

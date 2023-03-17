@@ -1,4 +1,8 @@
-vim.cmd.packadd("packer.nvim")
+local status, packer = pcall(require, "packer")
+if not status then
+  return
+end
+-- vim.cmd.packadd("packer.nvim")
 
 return require('packer').startup(function(use)
   -- Packer can manage itself
@@ -98,5 +102,8 @@ return require('packer').startup(function(use)
 
   -- Es un complemento de neovim para revelar rapidamente el msg oculta de git debajo del cursor.
   use {'rhysd/git-messenger.vim'}
+
+  -- tmux y split para navegar entre las ventanas..
+  use("christoomey/vim-tmux-navigator")
 
 end)

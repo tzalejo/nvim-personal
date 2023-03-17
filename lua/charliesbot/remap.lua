@@ -3,6 +3,12 @@ local mapper = function(mode, key, result)
   vim.api.nvim_set_keymap(mode, key, result, {noremap = true, silent = true})
 end
 
+-- para que al eliminar un caracter no lo copie.
+mapper("n", "x", '"_x')
+
+-- para cerrar una ventana que tmb se puede hacer con leader + q
+mapper("n", "<Leader>sx", ":close<CR>")
+
 -- Git messenger
 mapper("n", "<Leader>gm", "<Plug>(git-messenger)<CR>")
 
