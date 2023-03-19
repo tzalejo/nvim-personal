@@ -13,6 +13,5 @@ builtin.project_files = function()
 end
 
 vim.keymap.set("n", "<Leader>fs", builtin.project_files, {})
-vim.keymap.set("n", "<Leader>ft", function()
-  builtin.grep_string({ search = vim.fn.input("Grep > ") })
-end)
+vim.keymap.set('n', '<Leader>ff', builtin.find_files, {})
+vim.keymap.set('n', '<Leader>ft', builtin.live_grep, {})
