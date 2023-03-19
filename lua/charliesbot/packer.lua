@@ -58,10 +58,9 @@ return require('packer').startup(function(use)
   }
 
   -- Una línea de estado de Neovim increíblemente rápida y fácil de configurar escrita en Lua.
-  use {
-    'nvim-lualine/lualine.nvim',
-    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
-  }
+  use {  'nvim-lualine/lualine.nvim' }
+  -- icons
+  use { 'kyazdani42/nvim-web-devicons' }
 
   --Permite saltar a cualquier parte de un documento con la menor cantidad de pulsaciones de teclas posible
   use {"phaazon/hop.nvim"}

@@ -1,12 +1,20 @@
+local setup, tree=pcall(require, 'nvim-tree')
+
+if not setup then
+  return
+end
 
 -- disable netrw at the very start of your init.lua (strongly advised)
+vim.g.loaded = 1
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
 -- set termguicolors to enable highlight groups
-vim.opt.termguicolors = true
+-- vim.opt.termguicolors = true
+-- vim.cmd([[ highlight NvimTreeIndentMarker guifg=#3FC5FF ]])
 
-require'nvim-tree'.setup{
+
+tree.setup( {
   sort_by = "Alejandro",
   disable_netrw        = false,
   hijack_netrw         = true,
@@ -77,13 +85,14 @@ require'nvim-tree'.setup{
       quit_on_open  = false,
       resize_window = false,
       window_picker = {
-        enable  = true,
+        enable = false,
+        --[[ enable  = true,
         chars   = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890",
         exclude = {
           filetype = { "notify", "packer", "qf", "diff", "fugitive", "fugitiveblame", },
           buftype  = { "nofile", "terminal", "help", },
-        }
+        } ]]
       }
     }
   },
- }
+ })
