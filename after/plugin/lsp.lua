@@ -4,12 +4,31 @@ local mason = require("mason")
 lsp.preset("recommended")
 
 lsp.ensure_installed({
-  "tsserver", "eslint",
-  "lua_ls",
-  "rust_analyzer",
-  "clangd",
+  'eslint',
+  'lua_ls',
+  'rust_analyzer',
+  'clangd',
+  -- html y css
+  'html',
+  'cssls',
+  'tailwindcss',
   -- php
-  "intelephense",
+  'intelephense',
+  -- 'phpactor',
+  -- 'psalm',
+  -- javascript
+  'quick_lint_js',
+  'tsserver',
+  'vtsls',
+  -- docker
+  'dockerls',
+  'docker_compose_language_service',
+
+  'eslint',
+  -- sql
+  'sqlls',
+  -- lua
+  'lua_ls'
 })
 
 mason.setup()

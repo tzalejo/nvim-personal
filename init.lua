@@ -1,1 +1,2 @@
-require("charliesbot")
+-- require('charliesbot')
+require('alejobot')
