@@ -5,30 +5,38 @@ lsp.preset("recommended")
 
 lsp.ensure_installed({
   'eslint',
+
+  -- lua
   'lua_ls',
-  'rust_analyzer',
+  -- 'rust_analyzer',
   'clangd',
+
   -- html y css
   'html',
   'cssls',
   'tailwindcss',
+
   -- php
   'intelephense',
   -- 'phpactor',
   -- 'psalm',
+
   -- javascript
   'quick_lint_js',
   'tsserver',
+
+  --typescript
   'vtsls',
+  'eslint_d',
+  -- 'typescript-language-server',
+  -- 'eslint-lsp',
+
   -- docker
   'dockerls',
   'docker_compose_language_service',
 
-  'eslint',
   -- sql
   'sqlls',
-  -- lua
-  'lua_ls'
 })
 
 mason.setup()
@@ -121,8 +129,8 @@ lsp.on_attach(function(client, bufnr)
   vim.keymap.set("n", "<leader>n", vim.diagnostic.goto_next, opts)
   vim.keymap.set("n", "<leader>m", vim.diagnostic.goto_prev, opts)
   vim.keymap.set("n", "<leader>vca", vim.lsp.buf.code_action, opts)
-  vim.keymap.set("n", "<leader>vrr", vim.lsp.buf.references, opts)
-  vim.keymap.set("n", "<leader>vrn", vim.lsp.buf.rename, opts)
+  vim.keymap.set("n", "<leader>vrr", vim.lsp.buf.references, opts) -- NOTE: para ver la referencia dnd aparece la variable
+  vim.keymap.set("n", "<leader>vrn", vim.lsp.buf.rename, opts) -- NOTE: para cmabiar el nombre en todo el archivo..
   vim.keymap.set("n", "<leader>sh", vim.lsp.buf.signature_help, opts)
 end)
 

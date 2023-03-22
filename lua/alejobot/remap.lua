@@ -3,6 +3,8 @@ local mapper = function(mode, key, result)
   vim.api.nvim_set_keymap(mode, key, result, {noremap = true, silent = true})
 end
 
+mapper('i', 'jj', '<ESC>')
+
 -- para que al eliminar un caracter no lo copie.
 mapper("n", "x", '"_x')
 
