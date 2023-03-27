@@ -27,7 +27,7 @@ lsp.ensure_installed({
 
   --typescript
   'vtsls',
-  'eslint_d',
+  -- 'eslint_d',
   -- 'typescript-language-server',
   -- 'eslint-lsp',
 
