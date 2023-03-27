@@ -4,4 +4,3 @@
 -- Para acutalizar treesitter
 :TSUpdate
 
-

@@ -1,7 +1,15 @@
+vim.g.mapleader = ' '
+
+local keymap = vim.keymap --for consisenes
+
 -- Mapping helper
 local mapper = function(mode, key, result)
   vim.api.nvim_set_keymap(mode, key, result, {noremap = true, silent = true})
 end
+
+---------------------
+-- General Keymaps
+---------------------
 
 mapper('i', 'jj', '<ESC>')
 
@@ -67,3 +75,7 @@ mapper("n", "<Leader>vi", ":vsplit<CR>") -- ventana izquierda
 -- Cerrar una buffer
 mapper("n", "<C-w>", ":Bdelete<CR>")
 
+-- telescope
+mapper('n', '<Leader>fs', "<cmd>Telescope find_files<cr>")
+mapper('n', '<Leader>ft', "<cmd>Telescope live_grep<cr>")
+mapper('n', '<Leader>fh', "<cmd>Telescope help_tags<cr>")
