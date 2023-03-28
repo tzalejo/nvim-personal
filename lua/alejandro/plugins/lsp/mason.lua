@@ -28,11 +28,11 @@ mason.setup({
 
 mason_lspconfig.setup({
 	ensure_installed = {
-		"eslint",
+		-- "eslint",
 
 		-- lua
 		"lua_ls",
-		-- 'rust_analyzer',
+
 		"clangd",
 
 		-- html y css
@@ -42,8 +42,8 @@ mason_lspconfig.setup({
 
 		-- php
 		"intelephense",
-		-- 'phpactor',
-		-- 'psalm',
+		-- "phpactor",
+		-- "psalm",
 
 		-- javascript
 		"quick_lint_js",
