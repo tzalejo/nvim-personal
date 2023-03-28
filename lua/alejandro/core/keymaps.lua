@@ -1,17 +1,17 @@
-vim.g.mapleader = ' '
+vim.g.mapleader = " "
 
 local keymap = vim.keymap --for consisenes
 
 -- Mapping helper
 local mapper = function(mode, key, result)
-  vim.api.nvim_set_keymap(mode, key, result, {noremap = true, silent = true})
+	vim.api.nvim_set_keymap(mode, key, result, { noremap = true, silent = true })
 end
 
 ---------------------
 -- General Keymaps
 ---------------------
 
-mapper('i', 'jj', '<ESC>')
+mapper("i", "jj", "<ESC>")
 
 -- para que al eliminar un caracter no lo copie.
 mapper("n", "x", '"_x')
@@ -20,7 +20,7 @@ mapper("n", "x", '"_x')
 mapper("n", "<Leader>sx", ":close<CR>")
 
 -- Git messenger
-mapper("n", "<Leader>gm", "<Plug>(git-messenger)<CR>")
+-- mapper("n", "<Leader>gm", "<Plug>(git-messenger)<CR>")
 
 -- Para recargar un archivo de forma manual
 mapper("n", "<Leader>s", ":so<CR>")
@@ -32,7 +32,7 @@ mapper("n", "mq", ":qa!<CR>")
 mapper("n", "qq", ":q!<CR>")
 
 -- Abre una ventana
-mapper("n", "<Leader>V", ":vsplit<CR>")
+-- mapper("n", "<Leader>V", ":vsplit<CR>")
 
 mapper("n", "<esc>", ":noh<return><esc>")
 
@@ -47,9 +47,9 @@ mapper("n", "<Leader>to", ":TodoTelescope<CR>")
 
 -- Busqueda en un archivo
 -- Hop.nvim
-mapper('n', 'f', ":HopWord<CR>")
-mapper('n', 'F', ":HopPattern<CR>")
-mapper('n', 'ff', ":HopChar2<CR>")
+mapper("n", "f", ":HopWord<CR>")
+mapper("n", "F", ":HopPattern<CR>")
+mapper("n", "ff", ":HopChar2<CR>")
 
 -- Menu desplegable NERDTree
 mapper("n", "<Leader>nt", ":NvimTreeOpen<CR>")
@@ -76,6 +76,7 @@ mapper("n", "<Leader>vi", ":vsplit<CR>") -- ventana izquierda
 mapper("n", "<C-w>", ":Bdelete<CR>")
 
 -- telescope
-mapper('n', '<Leader>fs', "<cmd>Telescope find_files<cr>")
-mapper('n', '<Leader>ft', "<cmd>Telescope live_grep<cr>")
-mapper('n', '<Leader>fh', "<cmd>Telescope help_tags<cr>")
+mapper("n", "<Leader>fs", "<cmd>Telescope find_files<cr>")
+mapper("n", "<Leader>fs", "<cmd>Telescope find_files<cr>")
+mapper("n", "<Leader>ft", "<cmd>Telescope live_grep<cr>")
+mapper("n", "<Leader>fh", "<cmd>Telescope help_tags<cr>")
