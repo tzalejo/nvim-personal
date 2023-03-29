@@ -39,3 +39,10 @@ opt.splitright = true -- split vertical window to the right
 opt.splitbelow = true -- split horizontal window to the bottom
 
 opt.iskeyword:append("-") -- consider string-string as whole word
+
+-- cuando navego centro la pantalla
+vim.cmd([[
+nnoremap n nzzzv
+nnoremap N Nzzzv
+nnoremap J mzJ`z
+]])
