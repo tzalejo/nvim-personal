@@ -80,9 +80,3 @@ mapper("n", "<Leader>fs", "<cmd>Telescope find_files<cr>")
 mapper("n", "<Leader>fs", "<cmd>Telescope find_files<cr>")
 mapper("n", "<Leader>ft", "<cmd>Telescope live_grep<cr>")
 mapper("n", "<Leader>fh", "<cmd>Telescope help_tags<cr>")
-
--- Better window movement
-mapper("n", "<C-h>", "<C-w>h")
-mapper("n", "<C-j>", "<C-w>j")
-mapper("n", "<C-k>", "<C-w>k")
-mapper("n", "<C-l>", "<C-w>l")
