@@ -20,7 +20,7 @@ mapper("n", "x", '"_x')
 mapper("n", "<Leader>sx", ":close<CR>")
 
 -- Git messenger
--- mapper("n", "<Leader>gm", "<Plug>(git-messenger)<CR>")
+mapper("n", "<Leader>gm", "<Plug>(git-messenger)<CR>")
 
 -- Para recargar un archivo de forma manual
 mapper("n", "<Leader>s", ":so<CR>")

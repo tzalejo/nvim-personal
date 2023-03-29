@@ -84,6 +84,11 @@ _G.packer_plugins = {
     path = "/Users/alejandrovalenzuela/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  ["bufferline.nvim"] = {
+    loaded = true,
+    path = "/Users/alejandrovalenzuela/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
+    url = "https://github.com/akinsho/bufferline.nvim"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/Users/alejandrovalenzuela/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -113,6 +118,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/alejandrovalenzuela/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
+  },
+  ["git-messenger.vim"] = {
+    loaded = true,
+    path = "/Users/alejandrovalenzuela/.local/share/nvim/site/pack/packer/start/git-messenger.vim",
+    url = "https://github.com/rhysd/git-messenger.vim"
   },
   ["gitsigns.nvim"] = {
     loaded = true,
@@ -231,6 +241,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/alejandrovalenzuela/.local/share/nvim/site/pack/packer/start/vim-ReplaceWithRegister",
     url = "https://github.com/inkarkat/vim-ReplaceWithRegister"
+  },
+  ["vim-bbye"] = {
+    loaded = true,
+    path = "/Users/alejandrovalenzuela/.local/share/nvim/site/pack/packer/start/vim-bbye",
+    url = "https://github.com/moll/vim-bbye"
   },
   ["vim-maximizer"] = {
     loaded = true,

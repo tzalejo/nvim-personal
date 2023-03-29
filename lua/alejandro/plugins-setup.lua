@@ -120,6 +120,21 @@ return packer.startup(function(use)
 		end,
 	})
 
+	-- Para menejo de tabs(buffer)
+	use({
+		"akinsho/bufferline.nvim",
+		tag = "v3.*",
+		requires = "nvim-tree/nvim-web-devicons",
+	})
+	-- Permite eliminar búferes (cerrar archivos) sin cerrar sus ventanas o estropear su diseño.
+	use({ "moll/vim-bbye" })
+
+	-- Es un complemento de neovim para revelar rapidamente el msg oculta de git debajo del cursor.
+	use({ "rhysd/git-messenger.vim" })
+
+	-- tmux y split para navegar entre las ventanas..
+	use({ "christoomey/vim-tmux-navigator" })
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end
