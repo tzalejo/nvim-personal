@@ -135,6 +135,9 @@ return packer.startup(function(use)
 	-- tmux y split para navegar entre las ventanas..
 	use({ "christoomey/vim-tmux-navigator" })
 
+	--Permite saltar a cualquier parte de un documento con la menor cantidad de pulsaciones de teclas posible
+	use({ "phaazon/hop.nvim" })
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end

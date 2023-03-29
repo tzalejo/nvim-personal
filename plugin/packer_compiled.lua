@@ -129,6 +129,11 @@ _G.packer_plugins = {
     path = "/Users/alejandrovalenzuela/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
   },
+  ["hop.nvim"] = {
+    loaded = true,
+    path = "/Users/alejandrovalenzuela/.local/share/nvim/site/pack/packer/start/hop.nvim",
+    url = "https://github.com/phaazon/hop.nvim"
+  },
   kommentary = {
     loaded = true,
     path = "/Users/alejandrovalenzuela/.local/share/nvim/site/pack/packer/start/kommentary",
