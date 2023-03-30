@@ -129,6 +129,20 @@ return packer.startup(function(use)
 	--Permite saltar a cualquier parte de un documento con la menor cantidad de pulsaciones de teclas posible
 	use({ "phaazon/hop.nvim" })
 
+	-- Para resaltar y buscar comentarios de tareas pendientes como TODO:, en su base HACKde BUGcódigo.
+	-- FIX: otro error de prueba
+	use({
+		"folke/todo-comments.nvim",
+		requires = "nvim-lua/plenary.nvim",
+		config = function()
+			require("todo-comments").setup({
+				-- your configuration comes hereby
+				-- or leave it empty to use the default settings
+				-- refer to the configuration section below
+			})
+		end,
+	})
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end
