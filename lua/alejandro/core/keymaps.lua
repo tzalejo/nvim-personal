@@ -31,9 +31,6 @@ mapper("n", "<Leader>q", ":q<CR>")
 mapper("n", "mq", ":qa!<CR>")
 mapper("n", "qq", ":q!<CR>")
 
--- Abre una ventana
--- mapper("n", "<Leader>V", ":vsplit<CR>")
-
 mapper("n", "<esc>", ":noh<return><esc>")
 
 -- Duplitcate Line
@@ -49,24 +46,24 @@ mapper("n", "<Leader>to", ":TodoTelescope<CR>")
 -- Hop.nvim
 mapper("n", "f", ":HopWord<CR>")
 mapper("n", "F", ":HopPattern<CR>")
-mapper("n", "ff", ":HopChar2<CR>")
+mapper("n", "ff", ":HopChar2<CR>") -- busqueda con dos letras
 
 -- Menu desplegable NERDTree
 mapper("n", "<Leader>nt", ":NvimTreeOpen<CR>")
 mapper("n", "<Leader>nn", ":NvimTreeClose<CR>")
 mapper("n", "<Leader>nu", ":NvimTreeRefresh<CR>")
 
--- Resize with arrows
+-- Redimensiono las ventanas arriba, abajo, izquierda y derecha
 mapper("n", "<C-Up>", ":resize -2<CR>")
 mapper("n", "<C-Down>", ":resize +2<CR>")
 mapper("n", "<C-Left>", ":vertical resize +2<CR>")
 mapper("n", "<C-Right>", ":vertical resize -2<CR>")
 
--- Better window movement
+--[[ -- Better window movement
 mapper("n", "<C-h>", "<C-w>h")
 mapper("n", "<C-j>", "<C-w>j")
 mapper("n", "<C-k>", "<C-w>k")
-mapper("n", "<C-l>", "<C-w>l")
+mapper("n", "<C-l>", "<C-w>l") ]]
 
 --Agregar ventana
 mapper("n", "<Leader>va", ":split<CR>") -- ventana arriba
@@ -76,7 +73,6 @@ mapper("n", "<Leader>vi", ":vsplit<CR>") -- ventana izquierda
 mapper("n", "<C-w>", ":Bdelete<CR>")
 
 -- telescope
-mapper("n", "<Leader>fs", "<cmd>Telescope find_files<cr>")
 mapper("n", "<Leader>fs", "<cmd>Telescope find_files<cr>")
 mapper("n", "<Leader>ft", "<cmd>Telescope live_grep<cr>")
 mapper("n", "<Leader>fh", "<cmd>Telescope help_tags<cr>")
