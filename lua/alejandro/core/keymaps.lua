@@ -76,3 +76,5 @@ mapper("n", "<C-w>", ":Bdelete<CR>")
 mapper("n", "<Leader>fs", "<cmd>Telescope find_files<cr>")
 mapper("n", "<Leader>ft", "<cmd>Telescope live_grep<cr>")
 mapper("n", "<Leader>fh", "<cmd>Telescope help_tags<cr>")
+mapper("n", "<Leader>gst", "<cmd>Telescope git_status<cr>") -- Para ver status de cada archivo..
+mapper("n", "<Leader>gcm", "<cmd>Telescope git_commits<cr>") -- Muestra el listado de commits hechos..
