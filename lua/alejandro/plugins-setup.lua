@@ -123,9 +123,6 @@ return packer.startup(function(use)
 	-- Es un complemento de neovim para revelar rapidamente el msg oculta de git debajo del cursor.
 	use({ "rhysd/git-messenger.vim" })
 
-	-- tmux y split para navegar entre las ventanas..
-	use({ "christoomey/vim-tmux-navigator" })
-
 	--Permite saltar a cualquier parte de un documento con la menor cantidad de pulsaciones de teclas posible
 	use({ "phaazon/hop.nvim" })
 
