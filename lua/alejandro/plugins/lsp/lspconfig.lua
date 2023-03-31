@@ -22,7 +22,7 @@ local on_attach = function(client, bufnr)
 	-- keybind options
 	local opts = { noremap = true, silent = true, buffer = bufnr }
 
-	keymap.set("n", "gf", "<cmd>Lspsaga lsp_finder<CR>", opts) -- Un buscador para mostrar la definicion, la referencia y la implementacion
+	keymap.set("n", "gr", "<cmd>Lspsaga lsp_finder<CR>", opts) -- Un buscador para mostrar la definicion, la referencia y la implementacion
 	keymap.set("n", "gd", "<cmd>Lspsaga peek_definition<CR>", opts) -- Funciona como el comando de VSCode, pero te muestra en una ventana flotante
 	keymap.set("n", "gi", "<cmd>Lspsaga goto_definition<CR>", opts) -- Salta a la definicion de la palabra sobre el cursor
 
