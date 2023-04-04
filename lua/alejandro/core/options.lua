@@ -42,8 +42,9 @@ opt.iskeyword:append("-") -- consider string-string as whole word
 
 -- movimiento de linea
 vim.cmd([[
-nnoremap <silent> <S-C-k>  :<C-U>exec "exec 'norm m`' \| move -" . (1+v:count1)<CR>
-nnoremap <silent> <S-C-j>  :<C-U>exec "exec 'norm m`' \| move +" . (0+v:count1)<CR>
+filetype plugin indent on
+nnoremap <silent> <A-j>  :<C-U>exec "exec 'norm m`' \| move +" . (0+v:count1)<CR>
+nnoremap <silent> <A-k>  :<C-U>exec "exec 'norm m`' \| move -" . (1+v:count1)<CR>
 ]])
 
 -- cuando navego centro la pantalla

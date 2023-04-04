@@ -1,10 +1,10 @@
-local telescope_setup, telescope = pcall(require, "telescope")
-if not telescope_setup then
+local telescope_status, telescope = pcall(require, "telescope")
+if not telescope_status then
 	return
 end
 
-local actions_setup, actions = pcall(require, "telescope.actions")
-if not actions_setup then
+local actions_status, actions = pcall(require, "telescope.actions")
+if not actions_status then
 	return
 end
 
